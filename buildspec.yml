@@ -1,5 +1,8 @@
 Version: 0.2
+env:
+  parameter-store:
+    key: "codebuild-kms-sample"
 phases:
- build:
-   commands:
-     - echo 'test!'
+  build:
+    commands:
+     - echo $key
